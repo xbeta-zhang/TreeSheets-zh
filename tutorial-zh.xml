@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cell [
+<!ELEMENT cell (grid)>
+<!ELEMENT grid (row*)>
+<!ELEMENT row (cell*)>
+]>
+<cell colorbg="0xE6E6E6">
+  <grid>
+  <row>
+  <cell colorfg="0xFF0000" colorbg="0xF9F9F9" stylebits="2">
+  </cell>
+  </row>
+  <row>
+  <cell colorfg="0xFF0000" colorbg="0xF9F9F9" stylebits="2" relsize="8">欢迎使用 TreeSheets！
+  </cell>
+  </row>
+  <row>
+  <cell colorbg="0xF9F9F9" relsize="1">(1) 这个文件是一个可操作的引导教程。只需跟随文字前面的序号，您就可以快速而轻松地，一步一步学会使用 TreeSheets 的所有功能！
+    <grid>
+    <row>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">基础知识
+      <grid>
+      <row>
+      <cell>(2) 你来到了第 2 步！好的，现在让我们尝试插入文本。这些文本框中的每一个都被称为一个“单元格/Cell”。看到（2）和（3）之间的空单元格了吗？点击它内部的任何地方以选择它
+      </cell>
+      </row>
+      <row>
+      <cell relsize="2">
+      </cell>
+      </row>
+      <row>
+      <cell>(3) 上面的单元格应该被选中（周围有一个粗黑边框）。现在输入一些内容，你会看到文本出现在选定的单元格里。注意当你开始输入时，光标出现了，选择框变细了。这表示单元格处于文本编辑模式，所以像光标键、删除等操作，都会作用于当前文本。你也可以双击进入文本编辑模式，或者按回车键。要退出，再次按回车，或者按 Esc，或者选中另一个单元格。
+      </cell>
+      </row>
+      <row>
+      <cell>(4) 但是有一个更好的方法来插入文本。看到单元格之间的虚线了吗？我们称这些为“网格线/Grid Lines”。选择（4）和（5）之间的网格线
+      </cell>
+      </row>
+      <row>
+      <cell>(5) 上面这里应该被高亮显示。现在再次开始输入文本，并注意到一个新的单元格自动插入在（4）和（5）之间。这在单元格的边框上也同样有效。这是扩展任何 TreeSheet 的自然方式：找到一个你想添加信息的位置，然后就开始输入！
+      </cell>
+      </row>
+      <row>
+      <cell>(6) 你也可以在不使用鼠标的情况下跨网格线和单元格导航，以便更快地编辑：确保这个单元格被选中，然后按向上和向下的光标键几次。
+      </cell>
+      </row>
+      <row>
+      <cell>(7) 删除单元格的工作方式也是一样的。确保你选择了上面的任何网格线，然后按退格键删除上面的单元格（或之前），或者按删除键删除下面的单元格（或之后）。这类似于文本编辑器和文字处理器的工作方式。或者，简单地选择任何单元格（通过点击/拖动），然后按删除键删除它们也可以。
+      </cell>
+      </row>
+      <row>
+      <cell>(8) 如果你在上面删除了很多行（希望不是这一个！），现在是一个尝试撤销的好时机！连续按 CTRL+Z 来恢复你的删除。TreeSheets 有无限次撤销，所以按住 CTRL+Z 一段时间后，可以将文档恢复到原始状态。CTRL+Y 重做。
+        <grid>
+        <row>
+        <cell>在 OS X 系统，本教程提到 CTRL 处，都请用 CMD。ALT 和 OPTION 键同理。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">网格
+      <grid>
+      <row>
+      <cell>(9) 你可能已经注意到了，TreeSheets 可以嵌套单元格的网格。每个单元格都可以包含它自己的网格。例如，这个单元格就有一个子网格。
+        <grid>
+        <row>
+        <cell colorfg="0x000080" colorbg="0xF0F9F9" stylebits="4">北京豆汁
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" stylebits="4">2
+        </cell>
+        </row>
+        <row>
+        <cell colorfg="0x000080" colorbg="0xF0F9F9" stylebits="4">南方甜豆花
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" stylebits="4">1
+        </cell>
+        </row>
+        <row>
+        <cell colorfg="0x000080" colorbg="0xF0F9F9" stylebits="4">西藏酥油茶
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" stylebits="4">0.5
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell>(10) 向任何单元格添加网格，选择单元格并按 INSERT 或 SHIFT+ENTER。在这部分单元格上试试，你应该在这段文字下面得到一个 1x1 网格
+      </cell>
+      </row>
+      <row>
+      <cell>(11) 尝试通过选择它的 4 条网格线之一并输入文本，直到你至少有一个 3x3 网格，来扩展你在（10）中创建的单元格。也可以使用光标键在所有方向上移动。
+      </cell>
+      </row>
+      <row>
+      <cell>(12) 现在让我们尝试在网格中移动事物。通过从行的顶部单元格拖动到底部来选择网格中的整列（例如，选择（9）中包含的数字的网格），就像在电子表格中一样（和其他一些应用程序不同），在 TreeSheets 中拖动是为了扩展选择，而不是移动。现在按 CTRL+LEFT 光标键或 CTRL+RIGHT 来移动数据。
+      </cell>
+      </row>
+      <row>
+      <cell>(13) 你可以复制单元格，例如，选择这个单元格，用 CTRL+C 复制，然后选择上面的任何网格线并按 CTRL+V。如果你选择了多个单元格，所选内容将作为多行插入到目的地。试试看。剪切（CTRL+X）或删除多个单元格选择的操作同样直观。如果插入单元格“内联”粘贴是不可取的，你总是可以先创建一个新的网格，然后在那里粘贴，以创建层次结构。
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    </row>
+    <row>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">单元格格式和缩放
+      <grid>
+      <row>
+      <cell>(14) 单元格中的文本类似于一个单独的段落。它根据其所在列的列宽自动换行。列宽应该根据你如何偏好整体结构你的 TreeSheet 来确定。你可以通过状态栏看到列宽（鼠标所在的列）。确保这个单元格被选中，然后按住 ALT 并滚动鼠标滚轮看看会发生什么（或 ALT+PGUP/PGDN）。这个单元格应该自动重新格式化，以及这个列中的其他单元格，以及此列中的任何网格。注意，列宽指定的是每行的最大字符数，所以一旦每个单元格都在单独的一行上，它就不会使网格变宽。
+        <grid>
+        <row>
+        <cell>在某些 Mac 键盘上，PGUP/PGDN 使用 FN+UP/DOWN 模拟。另外，触控板（或魔术鼠标）上的滚轮是滑动手势。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell>(15) 更强大的选项是改变单元格在屏幕上占用的空间（有助于指示某些事物的相对重要性），那就是改变文本大小。选择这个单元格，按住 SHIFT 并滚动鼠标滚轮（或 SHIFT+PGUP/PGDN）。
+      </cell>
+      </row>
+      <row>
+      <cell>(16) 注意，如果你持续缩小，最终文本将被渲染为单个像素。这可能看起来没用，但实际上是一种整洁的信息管理方式，取代了其他应用程序中常见的层次结构的折叠/展开。
+      </cell>
+      </row>
+      <row>
+      <cell>(17) 例如，这个单元格包含一个小网格。选择这个单元格，然后按住 CTRL 并向前滚动鼠标滚轮 3 次来放大这个单元格（或 CTRL+PGUP/PGDN）。
+        <grid>
+        <row>
+        <cell relsize="-5">(18) 你之前看不到这段文字，但现在可以了！
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-5">(19) 当你放大时，TreeSheets 将基础文本大小设置为显示的最顶层网格的平均大小。当你使用 SHIFT+滚轮来改变文本大小时，你改变的是文本的相对大小。这意味着文本看起来有多大取决于缩放级别。这可能听起来有些复杂，但实际上，你可以让文本变得非常小，但当你放大时仍然可以看到更多。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-5">(20) 这个想法是，你使用像这样的小网格来存储信息（例如特定项目的待办事项列表），你希望它在你的整体 TreeSheet 中可用，但你不希望它占用空间。阅读或编辑它总是鼠标滚轮一转的事情。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-5">(21) 此外，设置文本大小通常只需要做一次，而你在其他应用程序中最终要做的树状折叠/展开或滚动是你每次想要查看信息时都要做的事情。TreeSheets 使得浏览大量信息变得不那么繁琐，更容易概览（像素大小的文本仍然给人留下了单元格内包含的信息量和结构的印象）。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-5">(22) 要让这段文本在顶层再次可读，请选择单元格（18..23）（不是 17），缩小两次（向后滚动鼠标滚轮），然后使用 SHIFT+鼠标滚轮向前，直到再次可读。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-5">(23) 如果现在你想让这个变得更小，选择相同的单元格，并使用 SHIFT+鼠标滚轮向后减小大小。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-5">(24) 注意到当你放大时，你在标题文本上方看到的灰色文本吗？这被称为上下文，可以帮助你记住你放大的树表的哪一部分。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell>如果你更倾向于完全将一个网格隐藏起来，你可以使用折叠功能（在 Windows 上按 F10，在其他平台上按 CTRL+F10）。试着在这个单元格上重复按它来查看效果。
+        <grid folded="1">
+        <row>
+        <cell>这个单元格和下面的单元格将被隐藏！
+        </cell>
+        </row>
+        <row>
+        <cell>注意，拥有折叠网格的单元格会获得一个 '+' 图标作为它的图像，表示有额外的信息可以显示。如果你展开它，图像将自动消失。
+        </cell>
+        </row>
+        <row>
+        <cell>如果你使用诸如“搜索下一个”之类的功能跳转到当前不可见的单元格，单元格也会自动展开。
+        </cell>
+        </row>
+        <row>
+        <cell>尽管折叠可能是你在其他应用程序中熟悉的操作，但缩小文本（见 17）将给你更好的信息概览，试试看！
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">渲染和布局
+      <grid>
+      <row>
+      <cell>你可以通过在任何选择上按 Alt+0 来切换文本放置到网格上方（垂直布局，像本文档的大部分）或旁边（水平布局）：
+        <grid>
+        <row>
+        <cell>文本在上方
+          <grid>
+          <row>
+          <cell>天地玄黄
+          </cell>
+          </row>
+          <row>
+          <cell>宇宙洪荒
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell>文本在旁边
+          <grid>
+          <row>
+          <cell>天地玄黄
+          </cell>
+          </row>
+          <row>
+          <cell>宇宙洪荒
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell>你也可以选择 3 种不同的渲染方法来显示嵌套，网格（像本文档的大部分）、气泡和线条（见编辑 -&gt; 布局渲染风格菜单）。结合水平/垂直，这提供了 6 种不同的风格：
+        <grid>
+        <row>
+        <cell colorbg="0x8080FF">
+        </cell>
+        <cell colorbg="0x8080FF" stylebits="2">垂直
+        </cell>
+        <cell colorbg="0x8080FF" stylebits="2">水平
+        </cell>
+        </row>
+        <row>
+        <cell colorbg="0x8080FF" stylebits="1">网格
+        </cell>
+        <cell>示例文本
+          <grid>
+          <row>
+          <cell>厚德载物
+            <grid>
+            <row>
+            <cell>仁者
+            </cell>
+            </row>
+            <row>
+            <cell>爱人
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell>自强不息
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        <cell>示例文本
+          <grid>
+          <row>
+          <cell>厚德载物
+            <grid>
+            <row>
+            <cell>仁者
+            </cell>
+            </row>
+            <row>
+            <cell>爱人
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell>自强不息
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell colorbg="0x8080FF" stylebits="1">气泡
+        </cell>
+        <cell>示例文本
+          <grid>
+          <row>
+          <cell>厚德载物
+            <grid>
+            <row>
+            <cell>仁者
+            </cell>
+            </row>
+            <row>
+            <cell>爱人
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell>自强不息
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        <cell>example text
+          <grid>
+          <row>
+          <cell>厚德载物
+            <grid>
+            <row>
+            <cell>仁者
+            </cell>
+            </row>
+            <row>
+            <cell>爱人
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell>自强不息
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell colorbg="0x8080FF" stylebits="1">线条
+        </cell>
+        <cell>example text
+          <grid>
+          <row>
+          <cell>厚德载物
+            <grid>
+            <row>
+            <cell>仁者
+            </cell>
+            </row>
+            <row>
+            <cell>爱人
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell>自强不息
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        <cell>example text
+          <grid>
+          <row>
+          <cell>厚德载物
+            <grid>
+            <row>
+            <cell>仁者
+            </cell>
+            </row>
+            <row>
+            <cell>爱人
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell>自强不息
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell>不同的风格最好应用于整个文档，但如果需要，也可以在每个单元格的基础上设置。
+        <grid>
+        <row>
+        <cell>"网格" 风格最适合编辑，因为它最清楚地显示你可以插入新数据的位置。
+        </cell>
+        </row>
+        <row>
+        <cell>"气泡" 在你为单个单元格分配背景颜色时效果最好。如果你将所有单元格都设置为相同的颜色，TreeSheets 会自动选择交替的颜色以避免气泡变得不可见。
+        </cell>
+        </row>
+        <row>
+        <cell>"线条" 风格适用于思维导图风格的文档。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    </row>
+    <row>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">图像 样式
+      <grid>
+      <row>
+      <cell relsize="-6">将图像添加到单元格中，使您的文档更清晰。图像会出现在该单元格文本的前面。将图像放在自己的单元格中以获得最大的灵活性。尝试在上述任何单元格中添加（小）图像（菜单编辑/添加图像，或从工具栏上的图像下拉菜单中选择一个）。
+        <grid>
+        <row>
+        <cell relsize="-6">图像存储在文档（.cts）文件中，这意味着如果您移动文件，您将永远不会丢失图像。如果您在文档中多次使用图像，只存储一个副本。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">如果你想在树表中引用较大的图像，而且它们在表格中太笨重，你也可以简单地将图像放在 .cts 相同的文件夹中，并在单元格中只放置它们的名称。然后，你可以使用编辑/打开文件（F4）来查看它们。
+          <grid>
+          <row>
+          <cell relsize="-6">你可以用这种方式引用任何文件类型
+          </cell>
+          </row>
+          <row>
+          <cell relsize="-6">要方便地添加新文件链接，只需将非图像文件拖放到单元格上
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell stylebits="3" relsize="-6">使单元格变粗，或斜体，或两者兼有！尝试在一些单元格上使用 CTRL+b 或 CTRL+i，两者都是切换。此外，打字机和下划线样式也可以从编辑/文本样式菜单中获得。
+      </cell>
+      </row>
+      <row>
+      <cell stylebits="16" relsize="-6">删除线（CTRL+t）是 TODO 列表中的一种有用样式，用来表示已经处理过的项目，但你还不想删除。
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">尝试使用工具栏中的两个颜色选择器给单元格上色。你可以双击当前颜色立即设置它们。选择包含网格的单元格，并使用边框颜色下拉菜单，或编辑/设置边框宽度菜单来改变它们的外观。
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">搜索 导航
+      <grid>
+      <row>
+      <cell relsize="-6">您可以通过在工具栏的搜索框中键入一些内容来使用即时搜索(CTRL + f 可以将焦点放在这个框上)。任何匹配的单元格都将突出显示(F3循环查看结果)。在替换框中键入一些内容，然后使用搜索菜单中的两个替换操作之一。
+        <grid>
+        <row>
+        <cell relsize="-7">作为搜索的替代，“转到匹配的单元格”（F6）会循环浏览与当前单元格具有相同文本的单元格，这可以作为一个交叉引用或链接机制。它倾向于先跳转到具有不同格式的单元格，这意味着您可以使用格式来区分定义单元格和链接单元格。试试看：
+          <grid>
+          <row>
+          <cell relsize="-7">循环单元格
+          </cell>
+          <cell relsize="-7">...
+          </cell>
+          <cell relsize="-7">循环单元格
+          </cell>
+          <cell relsize="-7">循环单元格
+          </cell>
+          </row>
+          <row>
+          <cell stylebits="1" relsize="-7">链接引用
+          </cell>
+          <cell relsize="-7">...
+          </cell>
+          <cell stylebits="2" relsize="-7">链接引用
+          </cell>
+          <cell stylebits="2" relsize="-7">链接引用
+          </cell>
+          </row>
+          <row>
+          <cell relsize="-7">定义
+          </cell>
+          <cell relsize="-7">abc
+          </cell>
+          <cell relsize="-7">使用
+          </cell>
+          <cell relsize="-7">使用
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">在 TreeSheets 中存储 URL 或书签集合，只需按 F5 即可在浏览器中打开它们
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    </row>
+    <row>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">标签 层级
+      <grid>
+      <row>
+      <cell relsize="-6">标签是处理在表格中重复使用的单词的好方法，比如状态、类别等。要使某个词成为标签，找到一个出现，然后执行“添加单元格为标签”（编辑/标签... 菜单）。从现在开始，您可以将任何其他单元格设置为标签，使用 CTRL+右键鼠标（弹出菜单）。标签是蓝色的，以向您发出信号它是一个标签。这有助于发现标签是否拼写错误。
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">与标签配合使用的一个强大操作是“层级交换”。一个例子说明它的作用：
+        <grid>
+        <row>
+        <cell relsize="-12">层级交换背后的动机是您使用 TreeSheets 以树形格式组织您的数据，但通常，树并不是组织数据的理想方式，因为它们迫使您做出关于哪个子分区最重要的选择。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">比如说，我正在组织一个项目，并试图追踪它涉及的任务。我使用标签来指示参与的人员、可交付成果和主题领域：
+          <grid>
+          <row>
+          <cell relsize="-12">milestone 1
+            <grid>
+            <row>
+            <cell relsize="-12">front end
+              <grid>
+              <row>
+              <cell relsize="-12">fred
+                <grid>
+                <row>
+                <cell relsize="-12">fix the GUI
+                </cell>
+                </row>
+                <row>
+                <cell relsize="-12">connect to database
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              <row>
+              <cell relsize="-12">bob
+                <grid>
+                <row>
+                <cell relsize="-12">overhaul graphics
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              </grid>
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-12">back end
+              <grid>
+              <row>
+              <cell relsize="-12">fred
+                <grid>
+                <row>
+                <cell relsize="-12">add input forms
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              </grid>
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell relsize="-12">milestone 2
+            <grid>
+            <row>
+            <cell relsize="-12">back end
+              <grid>
+              <row>
+              <cell relsize="-12">fred
+                <grid>
+                <row>
+                <cell relsize="-12">set up new tables
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              <row>
+              <cell relsize="-12">bob
+                <grid>
+                <row>
+                <cell relsize="-12">buy new servers
+                </cell>
+                </row>
+                <row>
+                <cell relsize="-12">set up networking
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              </grid>
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">请注意，在上表中，里程碑是最重要的维度，其次是主题领域，而人是最不明显的。这是一个相当灵活的组合，我们可能希望从人的角度来看，现在试一下层次交换吧！选择任何出现“ fred”的地方，然后按 F8两次，你会得到这个:
+          <grid>
+          <row>
+          <cell relsize="-12">fred
+            <grid>
+            <row>
+            <cell relsize="-12">milestone 1
+              <grid>
+              <row>
+              <cell relsize="-12">front end
+                <grid>
+                <row>
+                <cell relsize="-12">fix the GUI
+                </cell>
+                </row>
+                <row>
+                <cell relsize="-12">connect to database
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              </grid>
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-12">back end
+              <grid>
+              <row>
+              <cell relsize="-12">milestone 1
+                <grid>
+                <row>
+                <cell relsize="-12">add input forms
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              <row>
+              <cell relsize="-12">milestone 2
+                <grid>
+                <row>
+                <cell relsize="-12">set up new tables
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              </grid>
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          <row>
+          <cell relsize="-12">bob
+            <grid>
+            <row>
+            <cell relsize="-12">milestone 1
+              <grid>
+              <row>
+              <cell relsize="-12">front end
+                <grid>
+                <row>
+                <cell relsize="-12">overhaul graphics
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              </grid>
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-12">milestone 2
+              <grid>
+              <row>
+              <cell relsize="-12">back end
+                <grid>
+                <row>
+                <cell relsize="-12">buy new servers
+                </cell>
+                </row>
+                <row>
+                <cell relsize="-12">set up networking
+                </cell>
+                </row>
+                </grid>
+              </cell>
+              </row>
+              </grid>
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">实际上你所做的就是: “让我从 Fred 的角度看看这些信息”。现在你可以清楚地看到他在做什么。如果需要的话，你也可以为 Bob 做同样的事。如果你想看看 Fred 在后端做了什么，在“后端”按 F8一次(在 fred 中) ，你就又一次调整了你的视角。再按一次，现在前/后端成为主要的细分。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">继续按 F8 在各种标签上，看看你如何获得任何你需要的视角。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">重要的是要注意，在任何交换中，之前是父标签的，现在变成了所选标签的子标签。这意味着无论你有多少次这样做，都不会丢失信息。这意味着如果你愿意，你应该能够将树恢复到原始配置。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">所以你可以看到这个特性允许你拥有可以与任何数量的标签关联的信息片段。层级交换允许你确定当前标签的重要性顺序，因此，树视图只不过是最近的观点。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">你仍然可以在这个树的任何“视图”中编辑数据，不需要将树重置为原始顺序。像这样的树没有固定的顺序！
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-12">注意，提升“Fred”并不自动提升“Bob”。TreeSheets 不知道这些标签是同一“类型”。并非所有标签的使用都有明确定义的类型，并不总是需要一次性重新排序，所以这使得功能保持简单。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">与处理层级相关，还有“展平”层级的能力。以上面的里程碑示例为例，在应用展平之后，你会得到：
+        <grid>
+        <row>
+        <cell relsize="-8">里程碑 1
+        </cell>
+        <cell relsize="-8">前端
+        </cell>
+        <cell relsize="-8">Fred
+        </cell>
+        <cell relsize="-8">修复 GUI
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-8">里程碑 1
+        </cell>
+        <cell relsize="-8">前端
+        </cell>
+        <cell relsize="-8">Fred
+        </cell>
+        <cell relsize="-8">连接数据库
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-8">里程碑 1
+        </cell>
+        <cell relsize="-8">前端
+        </cell>
+        <cell relsize="-8">Bob
+        </cell>
+        <cell relsize="-8">全面改进图形
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-8">里程碑 1
+        </cell>
+        <cell relsize="-8">后端
+        </cell>
+        <cell relsize="-8">Fred
+        </cell>
+        <cell relsize="-8">添加输入表单
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-8">里程碑 2
+        </cell>
+        <cell relsize="-8">后端
+        </cell>
+        <cell relsize="-8">Fred
+        </cell>
+        <cell relsize="-8">设置新表格
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-8">里程碑 2
+        </cell>
+        <cell relsize="-8">后端
+        </cell>
+        <cell relsize="-8">Bob
+        </cell>
+        <cell relsize="-8">购买新服务器
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-8">里程碑 2
+        </cell>
+        <cell relsize="-8">后端
+        </cell>
+        <cell relsize="-8">Bob
+        </cell>
+        <cell relsize="-8">设置网络
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">虽然展平版本对于编辑和查看结构不如分层版本有用，但它是将数据导出到像电子表格这样的“平面”程序中的唯一方法（见导出/CSV）。电子表格用户喜欢以这种方式建模数据，所以反向操作“层级化”允许你将这样的表格重新转换为上面的层级结构。
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    <cell colorbg="0xF9F9F9" stylebits="1" relsize="2">高级操作
+      <grid>
+      <row>
+      <cell relsize="-6">(25) 如果一个单元格没有文本但它包含一个网格，比如下面的单元格，它将不显示文本空间。这可能使得选择它来插入文本变得困难。你可以通过简单地在选择了子单元格后按 ESC 来选择任何单元格（尝试选择 (26)，然后 ESC，然后输入一些文本）。同样方便的是，双击网格线可以选择整个网格。试试这个，双击 (26) 和 (27) 之间，然后输入一些文本。
+        <grid>
+        <row>
+        <cell relsize="-6">
+          <grid>
+          <row>
+          <cell relsize="-6">上
+          </cell>
+          <cell relsize="-6">面
+          </cell>
+          <cell relsize="-6">单
+          </cell>
+          <cell relsize="-6">元
+          </cell>
+          <cell relsize="-6">格
+          </cell>
+          <cell relsize="-6">无文字
+          </cell>
+          <cell relsize="-6">(26)
+          </cell>
+          <cell relsize="-6">(27)
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">转置是一个有用的操作，如果你想重新排列列表以获得更易管理的布局。选择这个单元格，然后编辑/网格重组/转置几次。确保它垂直显示，然后尝试在选择第一列或第二列后编辑/网格重组/排序。
+        <grid>
+        <row>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">One
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">Two
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">Three
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">Four
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">Five
+        </cell>
+        </row>
+        <row>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">1
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">2
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">3
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">4
+        </cell>
+        <cell colorfg="0x000080" colorbg="0x80FFFF" relsize="-6">5
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">注意看一下本软件的多种导入和导出功能，以及打印到纸张或 PDF
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">"包装到父级"（F9）是创建新的更高层级的好方法。选择任何几个单元格，按下F9，将建立它们的父级单元格。练习：尝试选择下面的 C 和 D，然后按 F9 并输入一些内容：
+        <grid>
+        <row>
+        <cell relsize="-6">A
+        </cell>
+        <cell relsize="-6">B
+        </cell>
+        <cell relsize="-6">C
+        </cell>
+        <cell relsize="-6">D
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">筛选，是一个有用的功能，一旦您的树状表格变得非常大，它们允许您临时过滤掉一部分单元格，以便专注。这是通过把其他单元格显示为 1 像素文本，并为浅灰色来实现的。尝试在视图菜单中使用筛选选项：
+        <grid>
+        <row>
+        <cell relsize="-6">现在尝试输入 "treesheets" 作为搜索查询。一些单元格会变为红色。现在尝试设置搜索过滤器（视图 -&gt; 过滤器 -&gt; 仅显示当前搜索的单元格），整个表格应该会大幅缩小，使您更容易看到您正在寻找的内容。在表格的最顶层视图这样做。尝试在过滤开启时放大和缩小。尝试编辑搜索查询，过滤视图会随着您的输入而变化。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">也试试这个表格上的 "最后 10% 的编辑"。首先确保关闭搜索查询。注意，如果您有来自树状表格旧版本的文档，由于这些版本还没有记录每个单元格的最后编辑时间，这个功能可能不会显示您期望的编辑。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">如果您使用的是旧电脑，或者使用非常大的表格，尝试 "快速线条渲染" 选项：显示效果不那么美观，但滚动速度更快。
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">TreeSheets 非常适合演示。与传统工具（如 PowerPoint）不同，后者很难向观众传达结构感，您可以将树状表格组织起来，就好像您的整个演示文稿是一个单独的 "幻灯片"，并且有您可以放大的最小化子幻灯片。为了帮助其作为演示工具的使用，TreeSheets 有两个查看选项：全屏视图（F11）以减少视觉混乱，以及缩放视图（F12）尝试使当前视图尽可能大。
+        <grid>
+        <row>
+        <cell relsize="-8">注意，这个功能和打印都使用了一种在所有情况下都不能保证渲染保真的缩放方法。这将在未来的版本中得到修复。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">TreeSheets 内置了一种脚本语言，用于创建插件
+        <grid>
+        <row>
+        <cell relsize="-6">这些脚本被放置在 "scripts/" 文件夹中，并在 TreeSheets 启动时自动添加到 "脚本" 菜单中，从那里可以启动它们。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">脚本可以读取和修改当前 TreeSheet 的所有内容！
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">脚本是用 The Lobster 编程语言编写的。
+          <grid>
+          <row>
+          <cell relsize="-6">阅读更多关于该语言的信息：
+          </cell>
+          <cell relsize="-6">http://strlen.com/lobster/
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">您可以在脚本中使用的功能列在 docs/script_reference.html 中。
+          <grid>
+          <row>
+          <cell relsize="-6">以 ts_ 开头的功能是 TreeSheets 特有的，其他的是通用语言功能。
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">阅读现有的脚本，了解它们能做什么！
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">TreeSheets 还包含了一种新颖的类似电子表格的编程语言，尽管它还没有完全功能。
+        <grid>
+        <row>
+        <cell relsize="-7">它的工作原理是在网格中直接放入操作，与数据混合。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-7">然后，当你 "运行" 表格时，语言会从左到右（以及从上到下）按顺序评估网格作为表达式。选择程序/运行（或工具栏按钮），下面的绿色方块应该填充数字 9（而不是 7!）。
+          <grid>
+          <row>
+          <cell relsize="-7">1
+          </cell>
+          <cell type="1" relsize="-7">+
+          </cell>
+          <cell relsize="-7">2
+          </cell>
+          <cell type="1" relsize="-7">*
+          </cell>
+          <cell relsize="-7">3
+          </cell>
+          <cell type="3" relsize="-7">
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-7">你通过给某些单元格特殊含义来创建程序。默认情况下，所有单元格都是白色的（数据）。从程序/标记为菜单中，你可以使它们成为操作（粉色），或者视图单元格（浅绿色）。视图单元格简单地显示任何操作的当前值。在下面的网格中，尝试将 + 标记为操作，并将最后一个空单元格标记为水平视图，使用程序菜单，然后按运行：
+          <grid>
+          <row>
+          <cell relsize="-7">1
+          </cell>
+          <cell relsize="-7">+
+          </cell>
+          <cell relsize="-7">2
+          </cell>
+          <cell relsize="-7">
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-7">操作自动在整个网格上工作，例如：
+          <grid>
+          <row>
+          <cell relsize="-7">
+            <grid>
+            <row>
+            <cell relsize="-7">1
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-7">2
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-7">3
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          <cell type="1" relsize="-7">+
+          </cell>
+          <cell relsize="-7">
+            <grid>
+            <row>
+            <cell relsize="-7">4
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-7">5
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-7">6
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          <cell type="1" relsize="-7">*
+          </cell>
+          <cell relsize="-7">
+            <grid>
+            <row>
+            <cell relsize="-7">7
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-7">8
+            </cell>
+            </row>
+            <row>
+            <cell relsize="-7">9
+            </cell>
+            </row>
+            </grid>
+          </cell>
+          <cell type="3" relsize="-7">
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-7">在这个阶段，除非你非常大胆，否则不建议实际使用该语言，因为只有少数操作被实现，并且许多操作数组合不受支持。勉强工作的：
+          <grid>
+          <row>
+          <cell relsize="-7">+
+          </cell>
+          <cell relsize="-7">-
+          </cell>
+          <cell relsize="-7">*
+          </cell>
+          <cell relsize="-7">/
+          </cell>
+          <cell relsize="-7">&lt;
+          </cell>
+          <cell relsize="-7">&gt;
+          </cell>
+          <cell relsize="-7">&lt;=
+          </cell>
+          <cell relsize="-7">&gt;=
+          </cell>
+          <cell relsize="-7">==
+          </cell>
+          <cell relsize="-7">!=
+          </cell>
+          <cell relsize="-7">=
+          </cell>
+          <cell relsize="-7">&lt;&gt;
+          </cell>
+          <cell relsize="-7">inc
+          </cell>
+          <cell relsize="-7">dec
+          </cell>
+          <cell relsize="-7">neg
+          </cell>
+          <cell relsize="-7">sum
+          </cell>
+          <cell relsize="-7">transpose
+          </cell>
+          <cell relsize="-7">if
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-7">有关操作的更多详细信息，请参见帮助 &gt; 加载操作参考（CTRL+ALT+F1）。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-7">看看 sales.cts 示例，看看它能做到什么。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">如果您在多台计算机上处理 TreeSheets 文件，请将它们存储在共享文件夹中（例如 Dropbox），并打开选项 -&gt; 自动重新加载文档。
+        <grid>
+        <row>
+        <cell relsize="-6">这样，当您保存文档时，您将在所有机器上始终保持最新。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      <row>
+      <cell relsize="-6">从命令行运行 TreeSheets
+        <grid>
+        <row>
+        <cell relsize="-6">您可以从命令行运行 TreeSheets。
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">作为参数，您可以指定一个要加载的单个文件。
+          <grid>
+          <row>
+          <cell relsize="-6">如果 TreeSheets 已经在系统中运行，这将导致它将文件传递给现有实例，然后退出。
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">您也可以使用 -p 作为参数运行它。
+          <grid>
+          <row>
+          <cell relsize="-6">这将以“便携式”模式启动 TreeSheets，其中（在 Windows 上）它将设置写入当前目录的 .ini 文件中，而不是写入注册表。
+          </cell>
+          </row>
+          </grid>
+        </cell>
+        </row>
+        <row>
+        <cell relsize="-6">注意，为了能够正确地从命令行运行，至少在 Windows 上，需要使用完整路径启动 TreeSheets.exe，否则它将无法找到相对于可执行文件路径的图标等。
+        </cell>
+        </row>
+        </grid>
+      </cell>
+      </row>
+      </grid>
+    </cell>
+    </row>
+    </grid>
+  </cell>
+  </row>
+  </grid>
+</cell>
